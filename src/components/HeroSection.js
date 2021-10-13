@@ -18,6 +18,7 @@ export default class HeroSection extends React.Component {
                   {markdownify(_.get(section, 'content', null))}
                 </div>
                 )}
+                <h2>This is an h2</h2>
                 {_.get(section, 'actions', null) && (
                 <div className="hero__actions button-group">
                   <CtaButtons {...this.props} actions={_.get(section, 'actions', null)} />
